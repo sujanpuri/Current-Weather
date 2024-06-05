@@ -1,7 +1,7 @@
 let result = document.getElementById("weatherInfo");
 let searchBtn = document.getElementById("searchButton");
 let cityRef = document.getElementById("cityInput");
-
+key = "aa3a39927d238e1eb9c17c8b39a5683b";
 //fetching the weather details from the API.    
 let getWeather = () =>
     {
@@ -22,14 +22,6 @@ let getWeather = () =>
                 //if city name is valid.
                 .then((data) =>
                     {
-                        console.log(data);
-                        console.log(data.weather[0].icon);
-                        console.log(data.weather[0].main);
-                        console.log(data.weather[0].description);
-                        console.log(data.name);
-                        console.log(data.main);
-                        console.log(data.main.temp_min);
-                        console.log(data.main.temp_max);
                         result.innerHTML=
                         `
                         <h2>${data.name}</h2>
