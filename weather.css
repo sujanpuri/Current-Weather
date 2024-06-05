@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("AllWeathers.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.596);
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+h2, h3, h4
+{
+    margin: 5px;
+}
+
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 200px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #222;
+}
+
+.weather-info {
+    margin-bottom: 20px;
+}
+
+.temp-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+#errorMessage {
+    color: red;
+}
